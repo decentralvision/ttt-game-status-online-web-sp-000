@@ -38,3 +38,8 @@ end
 def full?(board)
   board.none?(" ")
 end
+
+def draw?(board)
+  !won?(board) && full?(board)
+
+end
